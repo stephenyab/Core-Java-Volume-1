@@ -3,7 +3,7 @@ package Core_Java_Volume_1.chapter_3;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class BigInteger_5 {
+public class BigInteger_6 {
     public static void main(String[] args) {
         Scanner in=new Scanner(System.in);
 
