@@ -1,3 +1,5 @@
+package Core_Java_Volume_1.chapter_2;
+
 public class Welcome{
     public static void main(String[] args){
         String[] greeting=new String[3];
