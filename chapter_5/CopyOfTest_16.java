@@ -9,13 +9,12 @@ public class CopyOfTest_16 {
         a = (int[]) googCopyOf(a, 10);
         System.out.println(Arrays.toString(a));
 
-        String[] b={"Tom","Dick","Harry"}
-        ;
-        b=(String[])googCopyOf(b,10);
+        String[] b = {"Tom", "Dick", "Harry"};
+        b = (String[]) googCopyOf(b, 10);
         System.out.println(Arrays.toString(b));
 
         System.out.println("The following call will generate an exception");
-        b=(String[])badCopyOf(b,10);
+        b = (String[]) badCopyOf(b, 10);
 
     }
 
@@ -26,13 +25,13 @@ public class CopyOfTest_16 {
     }
 
     public static Object googCopyOf(Object a, int newLength) {
-        Class cl=a.getClass();
-        if(!cl.isArray())
+        Class cl = a.getClass();
+        if (!cl.isArray())
             return null;
-        Class componenType=cl.getComponentType();
-        int length= Array.getLength(a);
-        Object newArray=Array.newInstance(componenType,newLength);
-        System.arraycopy(a,0,newArray,0, Math.min(length,newLength));
+        Class componenType = cl.getComponentType();
+        int length = Array.getLength(a);
+        Object newArray = Array.newInstance(componenType, newLength);
+        System.arraycopy(a, 0, newArray, 0, Math.min(length, newLength));
         return newArray;
     }
 }
