@@ -10,9 +10,9 @@ public class Test{
         int month = date.getMonthValue();
         int today = date.getDayOfMonth();
 
-        date = date.minusDays(today - 1); //Set to start to month
+        date = date.minusDays(today - 1);
         DayOfWeek weekday = date.getDayOfWeek();
-        int value = weekday.getValue(); //1 = Monday, ... , 7 = Sun
+        int value = weekday.getValue();
 
         System.out.println("Mon Tue Wed Thu Fri Sat Sun");
         for(int i = 1; i < value; i++) {
