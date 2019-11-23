@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Date;
 
-public class AnonymousInnerClass_8 {
+public class AnonymousInnerClassTest_8 {
     public static void main(String[] args) {
         TalkingClock_8 clock = new TalkingClock_8();
         clock.start(1000, true);
