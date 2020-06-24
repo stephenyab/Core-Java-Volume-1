@@ -44,4 +44,9 @@ public class Employee {
     public void setHireDay(LocalDate hireDay) {
         this.hireDay = hireDay;
     }
+
+    public void raiseSalary(double byPercent) {
+        double raise = salary * byPercent / 100;
+        salary += raise;
+    }
 }
