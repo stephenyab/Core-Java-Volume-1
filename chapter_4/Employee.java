@@ -21,6 +21,10 @@ public class Employee {
         hireDay = LocalDate.of(year, month, day);
     }
 
+    public Employee(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -48,5 +52,12 @@ public class Employee {
     public void raiseSalary(double byPercent) {
         double raise = salary * byPercent / 100;
         salary += raise;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }
